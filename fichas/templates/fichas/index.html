@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header class="bg-primary text-white text-center p-3">
+    <h1>Clases Dofus</h1>
+  </header>
+
+  <!-- Contenido -->
+  <div class="container my-4">
+    <div class="row g-3">
+      <!-- Repite esta tarjeta 5 veces -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="{% static 'fichas/imagenes/ocra.jpg' %}" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Clase Ocra</h5>
+            <p class="card-text">Maestros del combate a distancia...</p>
+            <a href="{% url 'detalle_ocra' %}" class="btn btn-primary">Ver más</a>
+
+          </div>
+        </div>
+      </div>
+            <!-- Repite esta tarjeta 5 veces -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="{% static 'fichas/imagenes/sadida.jpg' %}" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Clase Sadida</h5>
+            <p class="card-text">Usan la naturaleza para invocar muñecos...</p>
+            <a href="{% url 'detalle' %}" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+              <!-- Fin tarjeta -->
+                     <!-- Repite esta tarjeta 5 veces -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="{% static 'fichas/imagenes/ocra.jpg' %}" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Clase xelor</h5>
+            <p class="card-text">Especialistas en controlar el tiempo: quitan PA (Puntos de Acción), adelantan o retrasan turnos, y pueden teletransportarse o mover enemigos con precisión táctica.</p>
+            <a href="{% url 'detalle_ocra' %}" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin tarjeta -->
+             <!-- Repite esta tarjeta 5 veces -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="{% static 'fichas/imagenes/ocra.jpg' %}" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Clase zurcarak</h5>
+            <p class="card-text">Apasionados por el azar. Sus habilidades tienen efectos que pueden variar (mucho daño o casi nada). Juegan con la suerte y el riesgo, y pueden curar, hacer daño o aplicar efectos según cómo caiga la suerte.</p>
+            <a href="{% url 'detalle_ocra' %}" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin tarjeta -->
+             <!-- Repite esta tarjeta 5 veces -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <img src="{% static 'fichas/imagenes/ocra.jpg' %}" class="card-img-top" alt="Imagen">
+          <div class="card-body">
+            <h5 class="card-title">Clase yopuka</h5>
+            <p class="card-text"> Valientes, impulsivos y amantes del combate directo. Usan fuerza bruta y son conocidos por sus golpes potentes. Ideales para estar en la primera línea.</p>
+            <a href="{% url 'detalle_ocra' %}" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin tarjeta -->
+      <!-- Fin tarjeta -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>&copy; 2025 - Mi Sitio - Dofus</p>
+  </footer>
+
+</body>
+</html>
